@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "nombre": "Guayabera de lino",
+        "categoria": "hombre",
+        "precio": 159000,
+        "imagen": "/img/camisa-lino.png",
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "nuevo": true,
+        "descripcion": "Guayabera clásica de lino con alforzas y cuatro bolsillos. Fresca y elegante para eventos de dia."
+    },
+    {
+        "id": 2,
+        "nombre": "Camisa de lino a cuadros",
+        "categoria": "hombre",
+        "precio": 129000,
+        "imagen": "/img/camisa-lino.png",
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "nuevo": false,
+        "descripcion": "Camisa casual de lino con estampado a cuadros. Ideal para el día a día."
+    }
+]
