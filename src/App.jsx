@@ -5,7 +5,17 @@ import Filtros from "./components/Filtros.jsx"
 import ListaProductos from "./components/ListaProductos.jsx"
 import DetalleProducto from "./components/detalleProducto.jsx"
 import Carrito from "./components/Carrito.jsx"
+import Aviso from "./components/Aviso.jsx"
 import PiePagina from "./components/PiePagina.jsx"
+
+function carritoGuardado() {
+  try {
+    const text = localStorage.getItem('carrito')
+    return text ? JSON.parse(text) : []
+  } catch {
+    return []
+  }
+}
 
 function App() {
 
@@ -16,8 +26,9 @@ function App() {
   const [busqueda, setBusqueda] = useState('')
   const [orden, setOrden] = useState('destacados')
   const [seleccionado, setSeleccionado] = useState(null)
-  const [carrito, setCarrito] = useState([])
   const [carritoAbierto, setCarritoAbierto] = useState(false)
+  const [aviso, setAviso] = useState('')
+  const [carrito, setCarrito] = useState(carritoGuardado)
 
   useEffect(() => {
     fetch('/productos.json')
@@ -34,6 +45,10 @@ function App() {
       setCargando(false)
     })
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+  }, [carrito])
 
   const texto = busqueda.trim().toLowerCase()
   const visibles = productos
@@ -65,6 +80,7 @@ function App() {
         setCarrito([...carrito, nuevo])
       }
       setSeleccionado(null)
+      setAviso(`${producto.nombre} (talla ${talla}) agregado al carrito`)
     }
 
     function cambiarCantidad(itemCambiado, cambio) {
@@ -111,6 +127,7 @@ function App() {
             onQuitar={quitarDelCarrito}
           />
         )}
+        <Aviso mensaje={aviso} onOcultar={setAviso} />
 
     </div>
   )
