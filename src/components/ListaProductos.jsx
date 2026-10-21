@@ -1,6 +1,6 @@
 import TarjetaProducto from "./TarjetaProducto.jsx";
 
-function ListaProductos({ productos, cargando, error }) {
+function ListaProductos({ productos, cargando, error, onVerDetalle }) {
     if (cargando) {
         return <p className="py-16 text-center text-stone-500">Cargando productos...</p>
     }
@@ -20,7 +20,7 @@ function ListaProductos({ productos, cargando, error }) {
     return (
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {productos.map((p) => (
-                <TarjetaProducto key={p.id} producto={p} />
+                <TarjetaProducto key={p.id} producto={p} onVerDetalle={onVerDetalle} />
             ))}
         </div>
     )
