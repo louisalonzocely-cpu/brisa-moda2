@@ -61,7 +61,7 @@
     "nombre": "Vestido floral",
     "categoria": "mujer",
     "precio": 149000,
-    "imagen": "/img/vestido-floral.svg",
+    "imagen": "/img/vestido-floral.png",
     "tallas": [
       "XS",
       "S",
@@ -76,7 +76,7 @@
     "nombre": "Blusa campesina",
     "categoria": "mujer",
     "precio": 79000,
-    "imagen": "/img/blusa-campesina.svg",
+    "imagen": "/img/blusa-campesina.png",
     "tallas": [
       "XS",
       "S",
@@ -91,7 +91,7 @@
     "nombre": "Falda midi plisada",
     "categoria": "mujer",
     "precio": 99000,
-    "imagen": "/img/falda-midi.svg",
+    "imagen": "/img/falda-midi-pisada.png",
     "tallas": [
       "XS",
       "S",
@@ -106,7 +106,7 @@
     "nombre": "Short de lino",
     "categoria": "mujer",
     "precio": 72000,
-    "imagen": "/img/short-lino.svg",
+    "imagen": "/img/short-lino.png",
     "tallas": [
       "XS",
       "S",
@@ -121,7 +121,7 @@
     "nombre": "Sombrero vueltiao",
     "categoria": "accesorios",
     "precio": 180000,
-    "imagen": "/img/sombrero-vueltiao.svg",
+    "imagen": "/img/sombrero-vueltiado.png",
     "tallas": [
       "Única"
     ],
@@ -133,7 +133,7 @@
     "nombre": "Mochila wayuu",
     "categoria": "accesorios",
     "precio": 210000,
-    "imagen": "/img/mochila-wayuu.svg",
+    "imagen": "/img/mochila-wayuu.png",
     "tallas": [
       "Única"
     ],
@@ -145,7 +145,7 @@
     "nombre": "Gafas de sol",
     "categoria": "accesorios",
     "precio": 65000,
-    "imagen": "/img/gafas-sol.svg",
+    "imagen": "/img/gafas-sol.png",
     "tallas": [
       "Única"
     ],
@@ -157,7 +157,7 @@
     "nombre": "Sandalias de cuero",
     "categoria": "accesorios",
     "precio": 115000,
-    "imagen": "/img/sandalias-cuero.svg",
+    "imagen": "/img/sandalias-cuero.png",
     "tallas": [
       "36",
       "37",
