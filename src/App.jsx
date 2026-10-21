@@ -6,6 +6,7 @@ import ListaProductos from "./components/ListaProductos.jsx"
 import DetalleProducto from "./components/detalleProducto.jsx"
 import Carrito from "./components/Carrito.jsx"
 import Aviso from "./components/Aviso.jsx"
+import FormularioPedido from "./components/FormularioPedido.jsx"
 import PiePagina from "./components/PiePagina.jsx"
 
 function carritoGuardado() {
@@ -29,6 +30,7 @@ function App() {
   const [carritoAbierto, setCarritoAbierto] = useState(false)
   const [aviso, setAviso] = useState('')
   const [carrito, setCarrito] = useState(carritoGuardado)
+  const [pedidoAbierto, setPedidoAbierto] = useState(false)
 
   useEffect(() => {
     fetch('/productos.json')
@@ -94,6 +96,10 @@ function App() {
       setCarrito(carrito.filter((item) => item !== itemQuitado))
     }
 
+    function abrirPedido() {
+      setCarritoAbierto(false)
+      setPedidoAbierto(true)
+    }
 
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800">
@@ -125,8 +131,16 @@ function App() {
             onCerrar={() => setCarritoAbierto(false)}
             onCambiarCantidad={cambiarCantidad}
             onQuitar={quitarDelCarrito}
+            onPedir={abrirPedido}
           />
         )}
+        {pedidoAbierto && (
+        <FormularioPedido
+          items={carrito}
+          onCerrar={() => setPedidoAbierto(false)}
+          onEnviado={() => setCarrito([])} />
+        )}
+
         <Aviso mensaje={aviso} onOcultar={setAviso} />
 
     </div>

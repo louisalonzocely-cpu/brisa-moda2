@@ -1,3 +1,5 @@
+import { celularLegible } from '../utils/formato.js'
+
 function PiePagina() {
     return (
         <footer id="contacto" className="mt-16 bg-mar-900 text-stone-200">
@@ -13,7 +15,7 @@ function PiePagina() {
                 </div>
                 <div>
                     <p className="font-semibold text-white">Escribenos</p>
-                    <p>WhatsApp: 300 123 4567</p>
+                    <p>WhatsApp: {celularLegible(import.meta.env.VITE_WHATSAPP_TIENDA)}</p>
                     <p>brisamar@brisamoda.com</p>
                 </div>
             </div>
