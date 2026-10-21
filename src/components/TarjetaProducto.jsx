@@ -2,11 +2,11 @@ import { pesos  } from "../utils/formato";
 
 function TarjetaProducto({ producto }) {
     return (
-        <article className="flex flex-col overflow-hidden rounded-2x1 bg-white shadow-sm ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-lg">
+        <article className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-lg">
             <div className="relative">
                 <img src={producto.imagen} alt={producto.nombre} className="aspect-square w-full"/>
                 {producto.nuevo && (
-                    <span className="adsolute top-3 left-3 rounded-full bg-mar-700 px-3 py-1 text-xs font-semibold text-white">Nuevo</span>
+                    <span className="absolute top-3 left-3 rounded-full bg-mar-700 px-3 py-1 text-xs font-semibold text-white">Nuevo</span>
                 )}
             </div>
             <div className="flex flex-1 flex-col gap-1 p-4">

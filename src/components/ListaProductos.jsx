@@ -10,7 +10,11 @@ function ListaProductos({ productos, cargando, error }) {
     }
 
     if (productos.length === 0) {
-        return <p className="py-16 text-center text-stone-500">No hay productos disponibles.</p>
+        return (
+            <p className="py-16 text-center text-stone-500">
+                No encontramos productos con esos filtros.
+            </p>
+        )
     }
 
     return (

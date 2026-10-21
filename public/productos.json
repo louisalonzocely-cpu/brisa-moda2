@@ -19,7 +19,7 @@
         "nombre": "Camisa de lino a cuadros",
         "categoria": "hombre",
         "precio": 129000,
-        "imagen": "/img/camisa-lino.png",
+        "imagen": "/img/camisa-lino-cuadros.png",
         "tallas": [
             "S",
             "M",
@@ -27,5 +27,146 @@
         ],
         "nuevo": false,
         "descripcion": "Camisa casual de lino con estampado a cuadros. Ideal para el día a día."
-    }
+    },
+    {
+        "id": 3,
+        "nombre": "Bermuda de dril",
+        "categoria": "hombre",
+        "precio": 89000,
+        "imagen": "/img/bermuda-dril.png",
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "nuevo": true,
+        "descripcion": "Bermuda de dril casual para tus ocasiones de encuentro."
+    },
+    {
+        "id": 4,
+        "nombre": "Pantalon de lino",
+        "categoria": "hombre",
+        "precio": 135000,
+        "imagen": "/img/pantalo-lino.png",
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "nuevo": false,
+        "descripcion": "Pantalon de lino elegante. Ideal para el eventos especiales."
+    },
+    {
+    "id": 5,
+    "nombre": "Vestido floral",
+    "categoria": "mujer",
+    "precio": 149000,
+    "imagen": "/img/vestido-floral.svg",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "nuevo": true,
+    "descripcion": "Vestido largo de viscosa con estampado de flores tropicales y tiras ajustables."
+  },
+  {
+    "id": 6,
+    "nombre": "Blusa campesina",
+    "categoria": "mujer",
+    "precio": 79000,
+    "imagen": "/img/blusa-campesina.svg",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "nuevo": false,
+    "descripcion": "Blusa de hombros descubiertos con bordado artesanal en el escote."
+  },
+  {
+    "id": 7,
+    "nombre": "Falda midi plisada",
+    "categoria": "mujer",
+    "precio": 99000,
+    "imagen": "/img/falda-midi.svg",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "nuevo": false,
+    "descripcion": "Falda midi de cintura alta con pliegues. Combina con blusas y camisetas."
+  },
+  {
+    "id": 8,
+    "nombre": "Short de lino",
+    "categoria": "mujer",
+    "precio": 72000,
+    "imagen": "/img/short-lino.svg",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "nuevo": false,
+    "descripcion": "Short de lino de tiro alto con lazo en la cintura."
+  },
+  {
+    "id": 9,
+    "nombre": "Sombrero vueltiao",
+    "categoria": "accesorios",
+    "precio": 180000,
+    "imagen": "/img/sombrero-vueltiao.svg",
+    "tallas": [
+      "Única"
+    ],
+    "nuevo": true,
+    "descripcion": "Sombrero tradicional tejido en caña flecha por artesanos de Tuchín, Córdoba."
+  },
+  {
+    "id": 10,
+    "nombre": "Mochila wayuu",
+    "categoria": "accesorios",
+    "precio": 210000,
+    "imagen": "/img/mochila-wayuu.svg",
+    "tallas": [
+      "Única"
+    ],
+    "nuevo": false,
+    "descripcion": "Mochila tejida a mano por artesanas wayuu de La Guajira, con diseños geométricos únicos."
+  },
+  {
+    "id": 11,
+    "nombre": "Gafas de sol",
+    "categoria": "accesorios",
+    "precio": 65000,
+    "imagen": "/img/gafas-sol.svg",
+    "tallas": [
+      "Única"
+    ],
+    "nuevo": false,
+    "descripcion": "Gafas de sol con filtro UV400 y montura liviana."
+  },
+  {
+    "id": 12,
+    "nombre": "Sandalias de cuero",
+    "categoria": "accesorios",
+    "precio": 115000,
+    "imagen": "/img/sandalias-cuero.svg",
+    "tallas": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "nuevo": false,
+    "descripcion": "Sandalias de cuero natural hechas en Colombia, con suela antideslizante."
+  }
 ]
